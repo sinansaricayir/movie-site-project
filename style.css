@@ -8,9 +8,10 @@
 }
 
 body {
-    height: 100vh;
     font-family: 'Electrolize', sans-serif;
 }
+
+
 
 /* ! base css end */
 
@@ -128,3 +129,55 @@ body {
 }
 
 /* ! sidebar end */
+
+/* ! featured start */
+
+.content-wrapper {
+    margin-left: 3.125rem;
+}
+
+
+.content-wrapper .featured-content {
+    background: url(img/spiderman.jpg);
+    background-size: 100% 100%;
+    padding: 3.125rem;
+    height: calc(100vh - 10rem);
+}
+
+.featured-content .featured-title {
+    width: 25rem;
+}
+
+.featured-content .featured-desc {
+    width: 31.25rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+    margin: 1.875rem 0;
+    padding: .625rem;
+}
+
+.featured-content .featured-buttons {
+    display: flex;
+    column-gap: 1.25rem;
+}
+
+.featured-buttons button {
+    padding: .625rem 1.5625rem;
+    border-radius: .125rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: .625rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.featured-buttons .info-button {
+    color: white;
+    background-color: rgb(145, 142, 142, 0.5);
+}
+
+
+/* ! featured end */
