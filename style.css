@@ -4,7 +4,6 @@
 /* ! base css start */
 
 * {
-
     margin: 0;
 }
 
@@ -16,19 +15,14 @@ body {
 /* ! base css end */
 
 
+/* ! navbar start */
+
 .navbar {
     background-color: #000;
     height: 3.75rem;
     color: white;
     position: sticky;
     top: 0;
-}
-
-.sidebar {
-    background-color: #000;
-    color: white;
-    height: 100vh;
-    width: 3.125rem;
 }
 
 .navbar-wrapper {
@@ -110,3 +104,27 @@ body {
     position: absolute;
     right: .0625rem;
 }
+
+/* ! navbar end */
+
+
+/* ! sidebar start */
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    background-color: #000;
+    color: white;
+    height: 100%;
+    width: 3.125rem;
+    position: fixed;
+}
+
+.sidebar i {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* ! sidebar end */
