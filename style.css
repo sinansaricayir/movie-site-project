@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+/* ! base css start */
+
+* {
+
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Electrolize', sans-serif;
+}
+
+/* ! base css end */
+
+
+.navbar {
+    background-color: #000;
+    height: 3.75rem;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar {
+    background-color: #000;
+    color: white;
+    height: 100vh;
+    width: 3.125rem;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 100%;
+}
+
+.menu-wrapper .menu-list {
+    display: flex;
+    align-items: center;
+    column-gap: 1.875rem;
+    list-style: none;
+}
+
+.menu-wrapper .menu-list-item {
+    cursor: pointer;
+    transition: 0.3s ease color;
+}
+
+.menu-wrapper .menu-list-item.active {
+    color: rgb(255, 70, 70);
+    font-weight: bold;
+}
+
+.menu-wrapper .menu-list-item:hover {
+    color: rgb(255, 70, 70);
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 1.875rem;
+    color: rgb(255, 70, 70);
+}
+
+.navbar .profile-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+}
+
+.navbar .profile-wrapper .profile-picture {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.navbar .profile-text-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: .3125rem;
+    line-height: 1;
+}
+
+.navbar .profile-wrapper .toggle {
+    width: 2.5rem;
+    height: 1.25rem;
+    background-color: white;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.navbar .profile-wrapper .toggle-icon {
+    color: goldenrod;
+}
+
+.navbar .profile-wrapper .toggle-ball {
+    height: 1.125rem;
+    width: 1.125rem;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: .0625rem;
+}
