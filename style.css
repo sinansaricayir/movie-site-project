@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Electrolize', sans-serif;
-    height: 200vh;
 }
 
 .container {
@@ -46,6 +45,7 @@ body {
     align-items: center;
     column-gap: 1.875rem;
     list-style: none;
+    padding: 0;
 }
 
 .menu-wrapper .menu-list-item {
@@ -164,6 +164,7 @@ body {
     opacity: 0.5;
     margin: 1.875rem 0;
     padding: .625rem;
+    color: #000;
 }
 
 .featured-content .featured-buttons {
@@ -210,3 +211,90 @@ body {
 }
 
 /* ! filter end */
+
+/* ! movie list start */
+
+.movie-list-container {
+    margin-left: 4.375rem;
+}
+
+.movie-list-container .movie-list {
+    list-style: none;
+    padding: 0;
+    height: 18.75rem;
+    display: flex;
+    column-gap: 1.875rem;
+    align-items: center;
+}
+
+.movie-list-container .movie-list-title {
+    font-size: 2rem;
+}
+
+.movie-list-container .movie-list-wrapper {
+    overflow: hidden;
+}
+
+.movie-list img {
+    width: 16.875rem;
+    height: 12.5rem;
+    object-fit: cover;
+    transition: 0.7s ease-in-out all;
+}
+
+
+.movie-list .movie-item {
+    position: relative;
+    transition: 0.7s ease-in all;
+}
+
+.movie-list .movie-item:hover .movie-item-title,
+.movie-list .movie-item:hover .movie-item-buttons,
+.movie-item:hover {
+    opacity: 1;
+}
+
+.movie-list .movie-item:hover .movie-item-img {
+    transform: scale(1.2);
+    margin: 0 1.875rem;
+    opacity: 0.5;
+}
+
+
+.movie-list .movie-item-title {
+    background-color: rgb(40, 40, 40, 0.4);
+    padding: 0 .625rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 2.125rem;
+    opacity: 0;
+    transition: 0.7s ease-in-out all;
+}
+
+.movie-list .movie-item-buttons {
+    background-color: rgb(40, 40, 40, 0.4);
+    position: absolute;
+    bottom: 10%;
+    font-weight: bold;
+    left: 4.125rem;
+    display: flex;
+    column-gap: 1.25rem;
+    padding: .625rem;
+    opacity: 0;
+    transition: 0.7s ease-in-out all;
+}
+
+.movie-list .movie-item-buttons i {
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s ease all;
+}
+
+.movie-list .movie-item-buttons i:hover {
+    opacity: 1;
+}
+
+/* ! movie list end */
