@@ -111,7 +111,7 @@ body {
     cursor: pointer;
     position: absolute;
     right: .0625rem;
-    transition: 0.3s ease all;
+    transition: 0.3s ease-in all;
 }
 
 /* ! navbar end */
@@ -170,7 +170,8 @@ body {
 
 .featured-content .featured-buttons {
     display: flex;
-    column-gap: 1.25rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .featured-buttons button {
@@ -363,3 +364,31 @@ body {
 }
 
 /* ! dark mode end */
+
+
+
+/* ! responsive start */
+@media only screen and (max-width:800px) {
+    .menu-wrapper {
+        display: none;
+    }
+
+    .content-wrapper .featured-content {
+        height: 50vh;
+    }
+
+    .featured-content .featured-title {
+        width: 12.5rem;
+    }
+
+    .featured-content .featured-desc {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        max-width: 12.5rem;
+        padding: 0;
+    }
+}
+
+/* ! responsive end */
