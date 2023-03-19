@@ -1,3 +1,5 @@
+//slider
+
 const arrows = document.querySelectorAll(".arrow")
 const movieLists = document.querySelectorAll(".movie-list")
 
@@ -18,4 +20,14 @@ arrows.forEach((arrow, i) => {
 
     })
 
+})
+
+
+// dark mode
+
+const ball = document.querySelector(".toggle-ball")
+const items = document.querySelectorAll(".container,.navbar,.sidebar,.sidebar i,.movie-list-title,.toggle,.toggle-ball,.movie-list-filter select")
+
+ball.addEventListener("click", function () {
+    items.forEach((item) => item.classList.toggle("active"))
 })

@@ -111,6 +111,7 @@ body {
     cursor: pointer;
     position: absolute;
     right: .0625rem;
+    transition: 0.3s ease all;
 }
 
 /* ! navbar end */
@@ -188,6 +189,11 @@ body {
 .featured-buttons .info-button {
     color: white;
     background-color: rgb(145, 142, 142, 0.5);
+}
+
+.featured-buttons .play-button {
+    color: white;
+    background-color: rgb(23 38 156 / 50%);
 }
 
 
@@ -318,3 +324,42 @@ body {
 }
 
 /* ! movie list end */
+
+
+/* ! dark mode start */
+.container.active {
+    background-color: white;
+}
+
+.navbar.active {
+    background-color: white;
+    color: #000;
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.sidebar i.active {
+    color: #000;
+}
+
+.movie-list-title.active {
+    color: #000;
+}
+
+.movie-list-filter select.active {
+    background-color: white;
+    color: #000;
+}
+
+.toggle.active {
+    background-color: #000 !important;
+}
+
+.toggle-ball.active {
+    background-color: white !important;
+    transform: translateX(-1.25rem);
+}
+
+/* ! dark mode end */
