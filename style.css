@@ -225,6 +225,8 @@ body {
     display: flex;
     column-gap: 1.875rem;
     align-items: center;
+    transform: translateX(0);
+    transition: 1s ease-in-out all;
 }
 
 .movie-list-container .movie-list-title {
@@ -233,6 +235,7 @@ body {
 
 .movie-list-container .movie-list-wrapper {
     overflow: hidden;
+    position: relative;
 }
 
 .movie-list img {
@@ -294,6 +297,23 @@ body {
 }
 
 .movie-list .movie-item-buttons i:hover {
+    opacity: 1;
+}
+
+
+.arrow {
+    width: 6.25rem;
+    display: flex;
+    font-size: 7.5rem;
+    position: absolute;
+    right: 0;
+    top: 6.25rem;
+    opacity: 0.5;
+    transition: 0.5s ease all;
+    cursor: pointer;
+}
+
+.arrow:hover {
     opacity: 1;
 }
 
