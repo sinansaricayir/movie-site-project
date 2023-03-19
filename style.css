@@ -9,6 +9,12 @@
 
 body {
     font-family: 'Electrolize', sans-serif;
+    height: 200vh;
+}
+
+.container {
+    background-color: #000;
+    color: white;
 }
 
 
@@ -24,6 +30,7 @@ body {
     color: white;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar-wrapper {
@@ -121,6 +128,7 @@ body {
     height: 100%;
     width: 3.125rem;
     position: fixed;
+    z-index: 1;
 }
 
 .sidebar i {
@@ -129,6 +137,8 @@ body {
 }
 
 /* ! sidebar end */
+
+
 
 /* ! featured start */
 
@@ -181,3 +191,22 @@ body {
 
 
 /* ! featured end */
+
+
+/* ! filter start */
+
+.movie-list-filter {
+    margin: 1.25rem 0 1.25rem 3.125rem;
+    padding: 1.25rem;
+}
+
+.movie-list-filter select {
+    background-color: #000;
+    width: 9.375rem;
+    color: white;
+    padding: .625rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ! filter end */
