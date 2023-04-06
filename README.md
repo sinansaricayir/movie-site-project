@@ -1,6 +1,6 @@
 # movie-site-project
 
-Hi, this project is an fully responsive movie site project made HTML, CSS and JavaScript.
+Hi, this project is a fully responsive movie site project made HTML, CSS and JavaScript.
 
 You can reach the live link of the project from the link below.
 
